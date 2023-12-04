@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
+        <title>Henry</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <style>
+        
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+        background-color: #161D3B;
+    }
+
+    #all {
+        
+        height:600px;
+        width:800px;
+        background-color: aliceblue;
+        display: flex;
+        color: #161D3B;
+        font-family: 'Helvetica';
+    }
+
+    ul { 
+        list-style-type: none;
+        
+    }
+    li {
+        cursor: pointer;
+    }
+
+    li:hover {
+        font-weight: bold;
+    }
+    li:link{
+    color: #161D3B;
+    }
+    li:visited {
+    color: #161D3B;
+    }
+
+    #sidebar {
+        width:280px;
+        height:600px;
+        background-color: aliceblue;
+        /* border: 3px solid #2867CC; */
+        border-right:none;
+        padding: 5px;
+        display: grid;
+    }
+    #main-content {
+        width:600px;
+        height:600px;
+        display: grid;
+        padding: 15px;
+        background-color: aliceblue;
+        /* border: 3px solid #2867CC; */
+    }
+    #nav {
+        display:grid;
+        font-size:30px;
+        margin-bottom: 400px;
+
+    }
+
+    #frame {
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        top:0px;
+        left:0px;
+    }
+    #projects {
+        font-size: 22px;
+        padding-left: 10%;
+    }
+    nav a {
+        color:black;
+        text-decoration: none;
+    }
+
+    </style>
+
+    <body>
+        <script>
+            $('.loadiframe').on('click', function(){
+                var src = $(this).data('src');
+                $("#frame").attr('src',src);
+            });
+        </script>
+            <script>
+                function myFunction() {
+                    var x = document.getElementByID("projects");
+                    x.style.display = (x.style.display == "none") ? "block" : "none";
+                }
+            </script>
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <img src="logo2.png" class='loadiframe' data-src='home.html'style="height:80px;width:200px">
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li class = 'loadiframe' data-src="about.html">about</li>
+                            <li class = 'loadiframe' data-src="work.html" onmouseover = 'myFunction()'>work</li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li class = 'loadiframe' data-src="p\01poster.html" >advocacy poster</li>
+                                <li class = 'loadiframe' data-src="p\02podcast.html" >interview podcast</li>
+                                <li class = 'loadiframe' data-src="p\01poster.html" >informative video</li>
+                                <li class = 'loadiframe' data-src="p\01poster.html" >website logo</li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div id="main-content">
+                <iframe id ="frame" data-src='/home.html' src='home.html' width = '580' height = '580' frameborder = '0' scrolling="no">
+            </div>
+
+        </div>
+
+    </body>
+</html>

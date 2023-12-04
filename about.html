@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
+        <title>About</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    </head>
+
+    <style>
+        
+    @font-face {
+      font-family: W95;
+      src: url("font/W95FA/W95FA.otf") format ("opentype");
+    }
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #all {
+        
+        height:600px;
+        width:800px;
+        background-color: aliceblue;
+        display: flex;
+        color: #161D3B;
+    }
+
+    .page {
+        list-style-type: none;
+    }
+
+    .page:hover {
+        font-weight: bold;
+    }
+
+    #main-content {
+        width:600px;
+        height:600px;
+        display: grid;
+        padding: 15px;
+        background-color: aliceblue;
+    }
+    #nav {
+        display:grid;
+        font-size:30px;
+        margin-bottom: 400px;
+    }
+
+    a:link, a:visited {
+        color:blue;
+    }
+    a:hover {
+        font-weight: bold;
+    }
+    td {
+        background-color: azure;
+        width:150px;
+        height:200px;
+        vertical-align: top;
+        padding: 10px;
+        text-align: center;
+    }
+    ul {
+        text-align: left;
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    </style>
+    <body>
+            <div id="main-content">
+                <img src="/01ABOUT-small.png">
+                <div style="width:560px;background-color: azure;height: 200px;position: relative;top:0px;padding:15px;margin-top:0px">
+                    <p style="width:350px;">Hi, I am Henry Wilson. I like to make movies and websites. I made this specific website to showcase what I made in my <b>Composing Digital Media</b> class this semester.</p>
+                    <a href='https://dimwit.neocities.org'>This is my other website.</a>
+                    <img src="profile.png" style="height:180px;position:absolute;right:10px;bottom:10px">
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Skills
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                </ul>
+                            </td>
+                            <td>Interests
+                                <ul>
+                                    <li>Guitar</li>
+                                    <li>Camping</li>
+                                    <li>Watching movies</li>
+                                    <li>Playing video games</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+    </body>
+</html>

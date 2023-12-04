@@ -1,0 +1,118 @@
+
+@font-face {
+    
+    @font-face {
+      font-family: Inter;
+      src: url("font/Inter-Regular.otf") format("opentype");
+    }
+    
+
+    @font-face {
+      font-family: Inter;
+      font-weight: bold;
+      src: url("font/Inter-SemiBold.otf") format("opentype");
+    }    /*general stuff*/
+    @font-face {
+      font-family: W95;
+      src: url("font/W95FA/W95FA.otf") format ("opentype");
+    }
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: rgb(145, 14, 14);
+    }
+    
+    
+    /* box [change color on hover] */
+    a.box:hover, a.box:active {color:black; background:white;}   
+    a:link{
+    color: #fff;
+    }
+    a:visited {
+    color: #fff;
+    }
+    
+    /* sizing stuff */
+    
+    #all {
+        height:800px;
+        width:600px;
+        position: absolute;
+        color:maroon;
+        top:0px;
+        left:0px;
+    }
+    
+    #top {
+      height:150px;
+      width:800px;
+      background-color:lightseagreen;
+      position: inherit;
+    }
+    .menu {
+      height:200px;
+      width:800px;
+      background-color:darkseagreen;
+    }
+    
+    /* holder */
+    
+    .holder {
+      height:210px;
+      width:340px;
+      border:3px solid var(--border-color);
+      border-top: 20px solid var(--border-color);
+      position:absolute;
+      background-color: var(--bg-color);
+    }
+    .holder span {
+      position:absolute;
+      color: var(--bg-color);
+      top:-20px;
+      font-size:12px;
+      padding: 3px;
+      font-family: sans-serif;
+    }
+    
+    /*TOOLTIP*/
+    
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #FFFACD;
+      color: #000;
+      text-align: center;
+      border-radius: 0px;
+      padding: 3px;
+      position: absolute;
+      z-index: 1;
+      bottom: 110%;
+      left: 50%;
+      margin-left: -60px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: black;
+      font-family: PixelOperator;
+    }
+    
+    .tooltip .tooltiptext::after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+}
