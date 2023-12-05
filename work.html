@@ -12,86 +12,166 @@
     </head>
 
     <style>
-        
-    * {
-      box-sizing: border-box;
-    }
-    body {
-        font-family:Verdana, Geneva, Tahoma, sans-serif
-    }
-    #all {
-        
-        height:600px;
-        width:800px;
-        background-color: aliceblue;
-        display: flex;
+        /*WHOLE SITE*/
+
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #161D3B;
+        }
+
+        /*DIV IDs*/
+
+        #all {
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+        }
+
+        #nav {
+            display:grid;
+            font-size:30px;
+            margin-bottom: 400px;
+        }
+
+        #all {
+            
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+            color: #161D3B;
+            font-family: 'Helvetica';
+        }
+
+        #sidebar {
+            width:280px;
+            height:600px;
+            background-color: aliceblue;
+            /* border: 3px solid #2867CC; */
+            border-right:none;
+            padding: 5px;
+            display: grid;
+        }
+        #main-content {
+            width:600px;
+            height:600px;
+            display: grid;
+            padding: 15px;
+            background-color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            /* border: 3px solid #2867CC; */
+        }
+
+        #projects {
+            font-size: 22px;
+            padding-left: 10%;
+        }
+
+        /*TABLES*/
+
+        table td{
+            background-color:azure;
+            border:1px solid #161D3B;
+            padding:5px;
+            text-align: center;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
+        }
+
+        table td ul {
+            padding-left:10%;
+            width:130px;
+        }
+
+        td:hover {
+            font-weight: bold;
+        }
+
+        /*LINKS*/
+
+        ul { 
+            list-style-type: none;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
+        li:hover {
+            font-weight: bold;
+        }
+        li:link{
         color: #161D3B;
-        font-family: 'Helvetica';
-    }
+        }
+        li:visited {
+        color: #161D3B;
+        }
 
-    .page {
-        list-style-type: none;
-    }
 
-    .page:hover {
-        font-weight: bold;
-    }
-
-    #sidebar {
-        width:200px;
-        height:600px;
-        background-color: aliceblue;
-        xxxxborder: 3px solid #2867CC;
-        border-right:none;
-        padding: 5px;
-        display: grid;
-    }
-    #main-content {
-        width:600px;
-        height:600px;
-        display: grid;
-        padding: 15px;
-        background-color: aliceblue;
-        xxxxborder: 3px solid #2867CC;
-    }
-    #nav {
-        display:grid;
-        font-size:30px;
-        margin-bottom: 400px;
-    }
-    table td{
-        background-color:azure;
-        border:1px solid #161D3B;
-        padding:5px;
-        text-align: center;
-        vertical-align: bottom;
-        width:200px;
-        height:200px;
-    }
-    td:hover {
-        font-weight: bold;
-    }
-
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
     </style>
+
     <body>
+        <script>
+            $('.loadiframe').on('click', function(){
+                var src = $(this).data('src');
+                $("#frame").attr('src',src);
+            });
+        </script>
+        <script>
+            function myFunction() {
+                var x = document.getElementByID("projects");
+                x.style.display = (x.style.display == "none") ? "block" : "none";
+            }
+        </script>
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <a href='/index.html'><img src="/logo2.png"style="height:80px;width:200px"></a>
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li><a href="/about.html">about</a></li>
+                            <li><a href="/work.html">work</a></li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li><a href="/p/01poster.html">advocacy poster</a></li>
+                                <li><a href="/p/02podcast.html">interview podcast</a></li>
+                                <li><a href="/p/03video.html">informative video</a></li>
+                                <li><a href="/p/04logo.html">website logo</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
             <div id="main-content">
                 <img src="/02WORK-small.png">
                 <div style="margin-top:-10px;margin-left:0px">
                     <p>Here are the four big projects for this class:</p>
                     <table>
                         <tr>
-                            <td><img src='poster2-final.png' style="height:180px;margin-bottom: 10px;">Advocacy Posters</td>
-                            <td><img src='podcast.png' style="width:180px;margin-bottom: 10px;">Interview Podcast</td>
+                            <td><a href="/p/01poster.html"><img src='poster2-final.png' style="height:180px;margin-bottom: 10px;">Advocacy Posters</a></td>
+                            <td><a href="/p/02podcast.html"><img src='podcast.png' style="width:180px;margin-bottom: 10px;">Interview Podcast</a></td>
                         </tr>
                         <tr></tr>
-                            <td><img src='mcdonald.jpg' style="width:180px;margin-bottom: 10px;">Informative Video</td>
-                            <td><img src='logo-small.png' style="width:180px;margin-bottom: 30px;">Website Logo</td>
+                            <td><a href="/p/03video.html"><img src='mcdonald.jpg' style="width:180px;margin-bottom: 10px;">Informative Video</a></td>
+                            <td><a href="/p/04logo.html"><img src='logo-small.png' style="width:180px;margin-bottom: 30px;">Website Logo</a></td>
                         </tr>
                     </table>
 
                 </div>
             </div>
+        </div>
 
-        
     </body>
 </html>

@@ -1,92 +1,147 @@
 <!DOCTYPE html>
 <html>
     <head>
- 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
-        <title>About</title>
+        <title>Henry</title>
         <link href="/style.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    
     </head>
 
     <style>
+        /*WHOLE SITE*/
         
-    @font-face {
-      font-family: W95;
-      src: url("font/W95FA/W95FA.otf") format ("opentype");
-    }
-    body {
-        font-family:Verdana, Geneva, Tahoma, sans-serif
-    }
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #161D3B;
+        }
 
+        /*DIV IDs*/
 
-    * {
-      box-sizing: border-box;
-    }
+        #all {
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+        }
 
-    #all {
-        
-        height:600px;
-        width:800px;
-        background-color: aliceblue;
-        display: flex;
+        #nav {
+            display:grid;
+            font-size:30px;
+            margin-bottom: 400px;
+        }
+
+        #all {
+            
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+            color: #161D3B;
+            font-family: 'Helvetica';
+        }
+
+        #sidebar {
+            width:280px;
+            height:600px;
+            background-color: aliceblue;
+            /* border: 3px solid #2867CC; */
+            border-right:none;
+            padding: 5px;
+            display: grid;
+        }
+        #main-content {
+            width:600px;
+            height:600px;
+            display: grid;
+            padding: 15px;
+            background-color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            /* border: 3px solid #2867CC; */
+        }
+
+        #projects {
+            font-size: 22px;
+            padding-left: 10%;
+        }
+
+        /*TABLES*/
+
+        table td{
+            background-color:azure;
+            border:1px solid #161D3B;
+            padding:5px;
+            text-align: center;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
+        }
+
+        table td ul {
+            padding-left:10%;
+            width:130px;
+        }
+
+        td:hover {
+            font-weight: bold;
+        }
+
+        /*LINKS*/
+
+        ul { 
+            list-style-type: none;
+        }
+
+        li:link{
         color: #161D3B;
-    }
+        }
+        li:visited {
+        color: #161D3B;
+        }
 
-    .page {
-        list-style-type: none;
-    }
 
-    .page:hover {
-        font-weight: bold;
-    }
-
-    #main-content {
-        width:600px;
-        height:600px;
-        display: grid;
-        padding: 15px;
-        background-color: aliceblue;
-    }
-    #nav {
-        display:grid;
-        font-size:30px;
-        margin-bottom: 400px;
-    }
-
-    a:link, a:visited {
-        color:blue;
-    }
-    a:hover {
-        font-weight: bold;
-    }
-    td {
-        background-color: azure;
-        width:150px;
-        height:200px;
-        vertical-align: top;
-        padding: 10px;
-        text-align: center;
-    }
-    ul {
-        text-align: left;
-        list-style-type: none;
-        padding-left: 0px;
-    }
-
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
     </style>
+
     <body>
+
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <a href='/index.html'><img src="/logo2.png"style="height:80px;width:200px"></a>
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li><a href="/about.html">about</a></li>
+                            <li><a href="/work.html">work</a></li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li><a href="/p/01poster.html">advocacy poster</a></li>
+                                <li><a href="/p/02podcast.html">interview podcast</a></li>
+                                <li><a href="/p/03video.html">informative video</a></li>
+                                <li><a href="/p/04logo.html">website logo</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
             <div id="main-content">
                 <img src="/01ABOUT-small.png">
-                <div style="width:560px;background-color: azure;height: 200px;position: relative;top:0px;padding:15px;margin-top:0px">
+                <div style="width:560px;background-color: azure;height: 200px;position: relative;top:-20%;padding:15px;margin-top:0px">
                     <p style="width:350px;">Hi, I am Henry Wilson. I like to make movies and websites. I made this specific website to showcase what I made in my <b>Composing Digital Media</b> class this semester.</p>
                     <a href='https://dimwit.neocities.org'>This is my other website.</a>
                     <img src="profile.png" style="height:180px;position:absolute;right:10px;bottom:10px">
                 </div>
                 <div>
-                    <table>
+                    <table style="display: none;">
                         <tr>
                             <td>Skills
                                 <ul>
@@ -106,8 +161,9 @@
                             </td>
                         </tr>
                     </table>
-                </div>
-            </div>
+                </div>            </div>
+
+        </div>
 
     </body>
 </html>

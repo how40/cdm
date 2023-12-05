@@ -1,1 +1,161 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
+        <title>Henry</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <style>
+        /*WHOLE SITE*/
+        
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #161D3B;
+        }
+
+        /*DIV IDs*/
+
+        #all {
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+        }
+
+        #nav {
+            display:grid;
+            font-size:30px;
+            margin-bottom: 400px;
+        }
+
+        #all {
+            
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+            color: #161D3B;
+            font-family: 'Helvetica';
+        }
+
+        #sidebar {
+            width:280px;
+            height:600px;
+            background-color: aliceblue;
+            /* border: 3px solid #2867CC; */
+            border-right:none;
+            padding: 5px;
+            display: grid;
+        }
+        #main-content {
+            width:600px;
+            height:max-content;
+            display: grid;
+            padding: 15px;
+            background-color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            /* border: 3px solid #2867CC; */
+        }
+
+        #projects {
+            font-size: 22px;
+            padding-left: 10%;
+        }
+
+        /*TABLES*/
+
+        table td{
+            background-color:azure;
+            border:1px solid #161D3B;
+            padding:5px;
+            text-align: center;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
+        }
+
+        table td ul {
+            padding-left:10%;
+            width:130px;
+        }
+
+        td:hover {
+            font-weight: bold;
+        }
+
+        /*LINKS*/
+
+        ul { 
+            list-style-type: none;
+        }
+
+        li:link{
+        color: #161D3B;
+        }
+        li:visited {
+        color: #161D3B;
+        }
+
+
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <a href='/index.html'><img src="/logo2.png"style="height:80px;width:200px"></a>
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li><a href="/about.html">about</a></li>
+                            <li><a href="/work.html">work</a></li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li><a href="/p/01poster.html">advocacy poster</a></li>
+                                <li><a href="/p/02podcast.html">interview podcast</a></li>
+                                <li><a href="/p/03video.html">informative video</a></li>
+                                <li><a href="/p/04logo.html">website logo</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div id="main-content">
+                <img src="/02WORK-small.png">
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h1 style="margin: 0px;">Project 2: Interview Podcast</h1>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin-top:0px">
+                    <iframe width="520" height="320" src="https://www.youtube.com/embed/qBdruITQMmI" title="interview podcast: Linda Lee (LJ Harvey and the Death&#39;s Head Band)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h2 style="margin: 0px;">Artist's Statement</h2>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px">
+
+                    <p>I have an online friend who shares a shocking amount of music taste with me. As such, whenever I find myself in a dry spell, skipping more songs than playing, I go to one of his playlists to find something new. This was where I found L.J. Harvey and the Death’s Head Band. Immediately I was captivated: the song title, tentative theme song for the aryan brotherbood, was equal parts shocking and intriguing; the album art, homemade and provocative; the music itself, a mishmash of folk, electronic, and psychedelic like I’d never heard before. Then I clicked on the band’s profile, to see only 125 monthly listeners. I knew I had to talk to this elusive L.J.</p>
+                    <p>This is exactly what I did for my interview podcast. With the intent on introducing the esoteric world of L.J. Harvey’s music to a broader audience I contacted the artist through their Instagram. But to say my desire to interview was purely to educate others would be disingenuous – I wanted to know the answers myself just as much as I wanted to share them. Ultimately I would hope that the listener to my podcast would get transposed the feelings I had listening to L.J. Harvey, with perhaps a greater understanding of the intent and real-life background behind the tracks. </p>
+                    <p>It is a good thing I was able to implement a diaspora of sound editing techniques to my interview, as I could barely listen to the raw file after I had interviewed L.J. Harvey, real name Linda Lee. In an awkward, nervous stupor I stumbled across my questions, put an “um” between every phrase, and had an overall disoriented structure to my questioning. This is to say nothing of the audio itself – using Discord, I incidentally forgot to pick up Linda’s audio for the first 30 seconds of us talking. I was able to mend the situation quickly, luckily; the same cannot be said for the audio on my end. Although I was talking to Linda with my high quality Shure microphone, I could not figure out in the moment how to get both Linda and my talking. As such I had to resort to using my laptop’s built in microphone for my input. This led to extensive use of noise removal and dialogue trimming, as when Linda spoke, it would get caught on my microphone as well. Nevertheless I am proud in how I fixed the situation into a palatable, if not totally competent, product. </p>
+                    <p>Using Adobe Audition allowed me to get creative with fade-ins, fade outs, and overall music transitions. The multitrack setup of the program afforded complex layering with various elements, such as sound effects and music samples. I feel that this gave my interview both a more professional and intimate feel. That being said, there was somewhat of a learning curve for me: I use Adobe Premiere almost on a daily basis, and as such was used to that program’s commands and shortcuts. However, once I mapped certain actions to keys on my keyboard I was able to optimize my workflow. Overall this project has opened my eyes to the opportunities of audio editing in Audition, as opposed to inline Premiere or other free but limited programs like Audacity.</p>
+                    <p>As I mentioned earlier, I believe a strong point of my podcast to be a sense of intimacy. This is felt through the music and sound effect choices. I also believe I asked good questions to Linda and fostered a comfortable environment. Although I could have been more prepared with my questions and structured them in a more eloquent manner, I am more than satisfied with my end result. The biggest problems was getting the motivation to do the project. Once I got the ball rolling it was easy, as I was heavily invested in the project’s creation. I stuck with my proposal I would say, and I learned a lot regarding the open source resources I have on the Internet, such as freesound.org, which I can use in the future on other multimodal projects.</p>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

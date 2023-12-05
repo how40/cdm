@@ -1,1 +1,161 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
+        <title>Henry</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <style>
+        /*WHOLE SITE*/
+        
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #161D3B;
+        }
+
+        /*DIV IDs*/
+
+        #all {
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+        }
+
+        #nav {
+            display:grid;
+            font-size:30px;
+            margin-bottom: 400px;
+        }
+
+        #all {
+            
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+            color: #161D3B;
+            font-family: 'Helvetica';
+        }
+
+        #sidebar {
+            width:280px;
+            height:600px;
+            background-color: aliceblue;
+            /* border: 3px solid #2867CC; */
+            border-right:none;
+            padding: 5px;
+            display: grid;
+        }
+        #main-content {
+            width:600px;
+            height:max-content;
+            display: grid;
+            padding: 15px;
+            background-color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            /* border: 3px solid #2867CC; */
+        }
+
+        #projects {
+            font-size: 22px;
+            padding-left: 10%;
+        }
+
+        /*TABLES*/
+
+        table td{
+            background-color:azure;
+            border:1px solid #161D3B;
+            padding:5px;
+            text-align: center;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
+        }
+
+        table td ul {
+            padding-left:10%;
+            width:130px;
+        }
+
+        td:hover {
+            font-weight: bold;
+        }
+
+        /*LINKS*/
+
+        ul { 
+            list-style-type: none;
+        }
+
+        li:link{
+        color: #161D3B;
+        }
+        li:visited {
+        color: #161D3B;
+        }
+
+
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <a href='/index.html'><img src="/logo2.png"style="height:80px;width:200px"></a>
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li><a href="/about.html">about</a></li>
+                            <li><a href="/work.html">work</a></li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li><a href="/p/01poster.html">advocacy poster</a></li>
+                                <li><a href="/p/02podcast.html">interview podcast</a></li>
+                                <li><a href="/p/03video.html">informative video</a></li>
+                                <li><a href="/p/04logo.html">website logo</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div id="main-content">
+                <img src="/02WORK-small.png">
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h1 style="margin: 0px;">Project 3: Informative Video</h1>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin-top:0px">
+                    <iframe width="520" height="320" src="https://www.youtube.com/embed/p6knjyzOVlk" title="How to game mcdonalds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h2 style="margin: 0px;">Artist's Statement</h2>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px">
+                    <p>Whether I like to admit it or not, I go to McDonald’s on a frequent basis, and I am consistently in awe of how much money the restaurant is able to get out of me on each visit. Nevertheless, there are definite ways I have learned to save money in the process. I wanted to make a video to share my knowledge, and even if the information is something you already know, I would like to entertain.</p>
+                    <p>Initially I sought to make a video of mainly in-person footage: outside and inside McDonalds, I planned to read a script in front of the camera. During the production process, my vision changed, and I instead pivoted to a full voiceover video, substituting my own B-roll with footage, audio, and pictures in the Creative Commons. I did this namely for convenience’s sake – proposing video projects with lofty goals is something I am too good at. In spite of restructuring, I believe sound and video was used effectively in my work. I used sound effects to gauge audience direction, and video to provide background and humor.</p> 
+                    <p>Premiere Pro is a program I am well accustomed to, and as such, I was able to use my creative voice in a confident manner. With easygoing background music and a slightly sardonic voiceover, I created a video in homage to commentary videos from early YouTube. The intricately timed edits and audio mixing was something I would not have been able to implement in a simpler program such as iMovie or Windows Movie Maker. Any limitations of Premiere were ones I have been accustomed to – and at this point, I believe my own workflow to be my greatest hinderance. Streamlining the asset collection process, to even programming my own hotkeys and macros are examples of ideas I can implement to make the editing process work frictionless.</p>
+                    <p>Overall, I am fond of my final product. I would not say that it is my best work – there are assuredly areas I could flesh out or present in a more creative manner had I more time in both the video itself and in the creative process. My voiceover, though communicated effectively, is held back by my headphone’s poor microphone quality. And ultimately, I believe the editing and charisma are carrying the brunt of my video’s effectiveness: the information I present is nothing groundbreaking or enlightening to anyone with some knowledge of McDonalds. </p>
+                    <p>I am proud of my ability to keep my assets to items available in Creative Commons. I undeniably had some exceptions to this rule, but overall, my ability to keep B-roll and images in the realm of public domain is something I want to continue to work on.</p>
+                    <p>Keeping assets in the public domain was not easy, however, especially in commentating on a company like McDonalds. I had to use vintage and foreign advertisements in video, and often times I was unable to convey the emotion I wanted to in an image through what I had available on Wikimedia Commons or Openverse. </p>
+                    <p>At the end of the day, while my video How to Game McDonalds may not have been the final product I envisioned, and though it is undeniably held back in some areas such as audio quality and informative content, the editing style, humor, and visual graphics come together to create a video I am proud to call my own. The experience I gained in navigating public domain sources, alongside refining my production process between Premiere, Audition, and Photoshop are accomplishments that will prove valuable for my future endeavors.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

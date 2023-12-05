@@ -1,1 +1,164 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5"> <!-- old: initial-scale=0.35 -->
+        <title>Henry</title>
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <style>
+        /*WHOLE SITE*/
+        
+        * {
+        box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #161D3B;
+        }
+
+        /*DIV IDs*/
+
+        #all {
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+        }
+
+        #nav {
+            display:grid;
+            font-size:30px;
+            margin-bottom: 400px;
+        }
+
+        #all {
+            
+            height:600px;
+            width:800px;
+            background-color: aliceblue;
+            display: flex;
+            color: #161D3B;
+            font-family: 'Helvetica';
+        }
+
+        #sidebar {
+            width:280px;
+            height:600px;
+            background-color: aliceblue;
+            /* border: 3px solid #2867CC; */
+            border-right:none;
+            padding: 5px;
+            display: grid;
+        }
+        #main-content {
+            width:600px;
+            height:max-content;
+            display: grid;
+            padding: 15px;
+            background-color: aliceblue;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            /* border: 3px solid #2867CC; */
+        }
+
+        #projects {
+            font-size: 22px;
+            padding-left: 10%;
+        }
+
+        /*TABLES*/
+
+        table td{
+            background-color:azure;
+            border:1px solid #161D3B;
+            padding:5px;
+            text-align: center;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
+        }
+
+        table td ul {
+            padding-left:10%;
+            width:130px;
+        }
+
+        td:hover {
+            font-weight: bold;
+        }
+
+        /*LINKS*/
+
+        ul { 
+            list-style-type: none;
+        }
+
+        li:link{
+        color: #161D3B;
+        }
+        li:visited {
+        color: #161D3B;
+        }
+
+
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+
+
+        <div id = 'all'>
+            <div id = 'sidebar'>
+                <a href='/index.html'><img src="/logo2.png"style="height:80px;width:200px"></a>
+                <div id="nav">
+                    <nav style="width:200px">
+                        <ul style="padding:0px">
+                            <li><a href="/about.html">about</a></li>
+                            <li><a href="/work.html">work</a></li>
+                            <ul id = 'projects' style = 'display:block'>
+                                <li><a href="/p/01poster.html">advocacy poster</a></li>
+                                <li><a href="/p/02podcast.html">interview podcast</a></li>
+                                <li><a href="/p/03video.html">informative video</a></li>
+                                <li><a href="/p/04logo.html">website logo</a></li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            <div id="main-content">
+                <img src="/02WORK-small.png">
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h1 style="margin: 0px;">Project 1: Advocacy Posters</h1>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin-top:0px"><img src="/poster1-final.png" style="width:50%"><img src="/poster2-final.png" style="width:50%">
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px"><h2 style="margin: 0px;">Artist's Statement</h2>
+                </div>
+                <div style="width:560px;background-color: azure;height: min-content;position: relative;top:0%;padding:15px;margin:10px 0px">
+
+                    <p>Through my posters, I sought to highlight the importance of the National Labor Relations Act (“NLRB”) in both a forthright and aesthetically pleasing design. My first poster took a more informational approach on the NLRB, leaning into a do-it-yourself style of simple graphics, monochromatic color scale, and direct-action messaging – though my second poster retained simple graphics and a sans-serif typeface; its rhetorical message was said through less words. Changes were made from my initial concepts, but the final product stuck to my initial goals overall. </p>
+                    <p>My first poster begins with a powerful affirmation: “You’ve got the right, so learn to Strike Right!” In bold lettering at the top of the page, this bold header contrasts against the text below itself, through its size and color. I put illustrations of protestors holding up information from the NLRB, with additional advice from the American Civil Liberties Union (“ACLU”) blended into the environment. Through this mapping of the text, the design principle of proximity was utilized. The information itself is somewhat repetitive – but that is intentional. By repeating statures on unionization and collective bargaining, such knowledge is retained stronger by the viewer. I chose to use a sans-serif font, as such typefaces are not only easily readable (and thus easily reproducible), they also evoke a sense of blunt neutrality.</p>
+                    <p>The principles of alignment and color heavily dictated the look of my second poster. Centering its text brings the viewer’s eyes to a fulcrum point in the bottom third of the page, which aids in my message of how an individual’s protection is aided when in collective strength. By using strictly white and yellow for text, the latter color was able to emphasize such message.</p>
+                    <p>Using Photoshop to create my two posters brought forth a distinct identity. The ability to manipulate large chunks of text by size, kerning, and alignment all across a blank canvas allowed me to present more information than I could have otherwise. I was able to achieve the look of the crowd in my second poster strictly through Photoshop’s layering, copying, and transforming capabilities. At the same time, Photoshop’s nature could be seen as oxymoronic to my goal of evoking “do-it-yourself” illustrations – something that could only be avoided through handwriting or physical collaging.</p>
+                    <p>The hardest part of the project for me was making the first draft of my posters. The step between mood boards and fleeting thoughts to tangible visualizations is a big one, and one that had me stuck. It was only when I stopped thinking so hard about making the right design and just started drawing my ideas that I was able to escape my rut. </p>
+                    <p>The biggest change between rough draft and final version for my first poster was having the actual information present. I finished the graphic design of my poster before actually obtaining the facts I desired. I filled in certain parts of the rough draft with nonsense text. After reading brochures and information pages from the NRLB’s website, I replaced the old text with verifiable information. </p>
+                    <p>As for my second poster, the biggest change from draft to final was a transition from hand-drawn cartoons to vector shape designs. I feel that the strong circles and angles of the final cartoon give a kind of backbone to the poster that my attempts with the Photoshop pencil tool did not achieve.</p>
+                    <p>Truthfully, I am proud of both posters. While I can understand viewers not agreeing with the information presented, be it political leanings or a greater intelligence on the posters’ subject matter, I hope anyone can find aesthetic appreciation of my designs.  I think they are better as objects of satisfying visuals than of informative value. But that is what I intended initially: to make a strong proxy for reliable sources, which I found to be the National Labor Relations Board and the American Civil Liberties Union.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
