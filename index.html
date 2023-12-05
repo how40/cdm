@@ -9,7 +9,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
 
-
     <style>
         /*WHOLE SITE*/
         
@@ -61,7 +60,7 @@
             display: grid;
             padding: 15px;
             background-color: aliceblue;
-            font-family: 'Helvetica';
+            font-family:Verdana, Geneva, Tahoma, sans-serif
             /* border: 3px solid #2867CC; */
         }
 
@@ -71,17 +70,15 @@
         }
 
         /*TABLES*/
-        table {
-            scale:0.8;
-        }
 
         table td{
             background-color:azure;
+            border:1px solid #161D3B;
             padding:5px;
             text-align: center;
-            vertical-align: middle;
-            width:100px;
-            height:10px;
+            vertical-align: bottom;
+            width:200px;
+            height:200px;
         }
 
         table td ul {
@@ -89,7 +86,9 @@
             width:130px;
         }
 
-  
+        td:hover {
+            font-weight: bold;
+        }
 
         /*LINKS*/
 
@@ -97,13 +96,6 @@
             list-style-type: none;
         }
 
-        li {
-            cursor: pointer;
-        }
-
-        li:hover {
-            font-weight: bold;
-        }
         li:link{
         color: #161D3B;
         }
@@ -119,18 +111,7 @@
     </style>
 
     <body>
-        <script>
-            $('.loadiframe').on('click', function(){
-                var src = $(this).data('src');
-                $("#frame").attr('src',src);
-            });
-        </script>
-        <script>
-            function myFunction() {
-                var x = document.getElementByID("projects");
-                x.style.display = (x.style.display == "none") ? "block" : "none";
-            }
-        </script>
+
 
         <div id = 'all'>
             <div id = 'sidebar'>
@@ -138,7 +119,6 @@
                 <div id="nav">
                     <nav style="width:200px">
                         <ul style="padding:0px">
-                            <li><a href="/cdm/about.html">about</a></li>
                             <li><a href="/cdm/work.html">work</a></li>
                             <ul id = 'projects' style = 'display:block'>
                                 <li><a href="/cdm/p/01poster.html">advocacy poster</a></li>
@@ -151,16 +131,35 @@
                 </div>
             </div>
 
-
-
-
             <div id="main-content">
-                <img src="/cdm/00HEADER-small.png">
-
-                <p style="font-size: 40px;width:600px;margin-top:100px;font-weight: bold;">
-                    I make movies and websites.</p>
-
-            </div>
+                <img src="/cdm/01ABOUT-small.png">
+                <div style="width:560px;background-color: azure;height: 200px;position: relative;top:-20%;padding:15px;margin-top:0px">
+                    <p style="width:350px;">Hi, I am Henry Wilson. I like to make movies and websites. I made this specific website to showcase what I made in my <b>Composing Digital Media</b> class this semester.</p>
+                    <a href='https://dimwit.neocities.org'>This is my other website.</a>
+                    <img src="/cdm/profile.png" style="height:180px;position:absolute;right:10px;bottom:10px">
+                </div>
+                <div>
+                    <table style="display: none;">
+                        <tr>
+                            <td>Skills
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                </ul>
+                            </td>
+                            <td>Interests
+                                <ul>
+                                    <li>Guitar</li>
+                                    <li>Camping</li>
+                                    <li>Watching movies</li>
+                                    <li>Playing video games</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>            </div>
 
         </div>
 
